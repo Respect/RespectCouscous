@@ -31,6 +31,8 @@ github:
 title: My project
 subTitle: This is a great project.
 
+gaTrackingId: Google Analytics' Tracking ID
+
 # The left menu bar
 menu:
     sections:
