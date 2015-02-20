@@ -6,8 +6,8 @@
 
         <title>{{ title }}</title>
 
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
         <link rel="stylesheet" href="{{ baseUrl }}/css/main.css">
     </head>
@@ -60,13 +60,11 @@
 
                 <section class="{{ menu ? 'col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10' : 'col-sm-12' }}">
                     {{ content|raw }}
-                    <div id="go-to-top">
-                        <p>&nbsp;</p>
+                    <div id="go-top">
                         <hr />
                         <p>
                             <a class="btn btn-primary btn-sm" href="#" role="button">
                                 <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
-                                Top
                             </a>
                         </p>
                     </div>
@@ -74,24 +72,22 @@
             </div>
         </main>
 
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 
         <script>
             $(function() {
-                // Little tweak for <h1>
-                $("main > h1").wrap('<div class="page-header" />');
                 hljs.initHighlightingOnLoad();
 
-                var goToTop = $('#go-to-top');
+                var top = $('#go-top');
 
                 $(window).scroll(function() {
                     if($(window).scrollTop() + $(window).height() <= $(document).height() - 100) {
                         return;
                     }
 
-                    goToTop.fadeIn();
+                    top.fadeIn();
                 });
             });
 
