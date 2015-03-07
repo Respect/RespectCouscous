@@ -4,7 +4,7 @@ The [Couscous](http://couscous.io) template for [Respect](http://respect.li) pro
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshots](screenshot.png)
 
 ## Usage
 
