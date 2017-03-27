@@ -6,7 +6,6 @@ main {
     margin-top: 90px;
 }
 
-
 .navbar .navbar-brand {
     font-size: 28px;
     height: auto;
@@ -61,4 +60,27 @@ code {
 
 pre > code {
     background: inherit !important;
+}
+
+table {
+  border: 1px solid #CCCCCC;
+  margin: 10px;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #DDDDDD;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+table thead th {
+  border-bottom-width: 2px;
+}
+table tbody td.number {
+  text-align: right;
+}
+table tbody td.number.negative {
+  color: #CC0000;
 }
