@@ -1,6 +1,6 @@
 # RespectCouscous
 
-The [Couscous](http://couscous.io) template for [Respect](http://respect.li) projects.
+The [Couscous](http://couscous.io) template for [Respect](http://respect.github.io) projects.
 
 ## Screenshot
 
